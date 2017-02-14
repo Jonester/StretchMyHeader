@@ -26,7 +26,9 @@ class CustomTableViewCell: UITableViewCell {
     }
     
     func displayCells(newsStory:NewsStory) {
-        categoryLabel.text = newsStory.category
+        let (text,color) = newsStory.category.toString()
+        categoryLabel.text = text
+        categoryLabel.textColor = color
         headlineLabel.text = newsStory.headline
     }
 

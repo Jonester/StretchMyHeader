@@ -11,11 +11,11 @@ import UIKit
 class NewsStory: NSObject {
 
     //MARK: Properties
-    var category:String
+    var category:NewsItem.NewsCategory
     var headline:String
     
     //MARK: Initialization
-    init(category:String, headline:String) {
+    init(category:NewsItem.NewsCategory, headline:String) {
         
         self.category = category
         self.headline = headline
